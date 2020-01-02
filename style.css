@@ -1,0 +1,95 @@
+/* CSS Styles */
+
+html {
+    background-color: #eff;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 10px;
+    padding: 0;
+    display: relative;
+}
+
+body > * {
+    box-sizing: border-box;
+}
+
+.heading {
+    height: 100px;
+    border: solid orange 1px;
+    display: inline-block;
+    left: 0px;
+	margin-bottom:0px;
+    text-align: center;
+}
+#mainTitle {
+	height:auto;
+	margin-bottom:20px;
+	text-align:center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+}
+
+nav a {
+    padding: 10px;
+    border: 1px green solid;
+    display: inline-block;
+    background-color: #6666;
+    color: #c00;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #fff0;
+    transition: 0.3s;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("media/VelocityOriginal.jpg");
+
+  /* Set a specific height */
+  min-height: 90vh; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {}
+
+article {
+    padding-top: 50px;
+    height: 10vh;
+    border: thin red solid;
+	padding:1vw;
+}
+
+article:nth-child(2n),
+nav a:nth-child(2n).active {
+    background-color: lightgoldenrodyellow;
+}
+
+footer {
+    background-color: black;
+    height: 100px;
+}
+
+@media screen and (min-width: 600px) {
+    nav {
+        display: inline-block;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+    }
+}
